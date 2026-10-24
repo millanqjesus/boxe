@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Boxe Bela Vista | Transformando Vidas</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom Hero Background with Overlay */
+        .hero-bg {
+            background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.9)), url('https://placehold.co/1920x1080/1a202c/ffffff?text=Treino+de+Boxe');
+            background-size: cover;
+            background-position: center;
+        }
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-hand-fist text-red-600 text-2xl"></i>
+                    <span class="font-bold text-xl tracking-wider">BOXE BELA VISTA</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#sobre" class="hover:text-red-500 transition-colors">O Projeto</a>
+                    <a href="#impacto" class="hover:text-red-500 transition-colors">Impacto</a>
+                    <a href="#aulas" class="hover:text-red-500 transition-colors">Aulas</a>
+                    <a href="#contato" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-full font-semibold transition-colors">Participe</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-gray-700">
+            <a href="#sobre" class="block px-4 py-3 text-sm text-white hover:bg-gray-700">O Projeto</a>
+            <a href="#impacto" class="block px-4 py-3 text-sm text-white hover:bg-gray-700">Impacto</a>
+            <a href="#aulas" class="block px-4 py-3 text-sm text-white hover:bg-gray-700">Aulas</a>
+            <a href="#contato" class="block px-4 py-3 text-sm text-red-400 font-bold hover:bg-gray-700">Participe</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg h-screen flex items-center relative" id="inicio">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-20">
+            <div class="text-center md:text-left max-w-3xl">
+                <span class="text-red-500 font-bold tracking-widest uppercase text-sm mb-2 block">São José, Santa Catarina</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+                    Lutando pela <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700">Cidadania</span> e pelo Futuro.
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 font-light">
+                    O Projeto Boxe Bela Vista transforma a vida de jovens estudantes através do esporte, ensinando disciplina, respeito e superação dentro e fora dos ringues.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#contato" class="btn-primary bg-red-600 text-white font-bold py-3 px-8 rounded-full text-center">Quero Treinar</a>
+                    <a href="#sobre" class="bg-transparent border border-white text-white hover:bg-white hover:text-gray-900 font-bold py-3 px-8 rounded-full text-center transition-colors">Conheça a História</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">A Ideia que Mudou a Escola</h2>
+                    <div class="w-16 h-1 bg-red-600 mb-6"></div>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Tudo começou em 2020, graças à visão do professor de História, <strong>Lucas Vilela</strong>, na Escola de Educação Básica Bela Vista. Com um tatame doado, luvas antigas e muita força de vontade no horário de almoço, o projeto nasceu para resolver conflitos escolares e manter os alunos focados.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Hoje, o esporte se tornou uma ferramenta de transformação. Os alunos aprendem que a verdadeira luta é pela educação: para participar, é obrigatório ter boas notas e assiduidade escolar.
+                    </p>
+                    <ul class="space-y-3 text-gray-700 font-medium">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Redução drástica de conflitos na escola</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Reconhecido pelo MPSC ("Cultivando Atitudes")</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Destaque no programa Conexão do Bem da ALESC</li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <img src="https://placehold.co/600x500/e2e8f0/475569?text=Alunos+Treinando" alt="Alunos no ringue de boxe" class="rounded-xl shadow-2xl z-10 relative">
+                    <div class="absolute -bottom-6 -right-6 w-full h-full border-4 border-red-600 rounded-xl z-0"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impactos / Números -->
+    <section id="impacto" class="py-16 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-12">Nosso Impacto em Números</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-800 rounded-2xl border border-gray-700">
+                    <i class="fa-solid fa-users text-5xl text-red-500 mb-4"></i>
+                    <h3 class="text-4xl font-extrabold mb-2">70+</h3>
+                    <p class="text-gray-400">Jovens Atendidos</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-2xl border border-gray-700">
+                    <i class="fa-solid fa-medal text-5xl text-red-500 mb-4"></i>
+                    <h3 class="text-4xl font-extrabold mb-2">20+</h3>
+                    <p class="text-gray-400">Atletas em Competição</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-2xl border border-gray-700">
+                    <i class="fa-solid fa-graduation-cap text-5xl text-red-500 mb-4"></i>
+                    <h3 class="text-4xl font-extrabold mb-2">100%</h3>
+                    <p class="text-gray-400">Permanência na Escola</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aulas / Informações -->
+    <section id="aulas" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Onde Acontecem as Aulas?</h2>
+                <div class="w-16 h-1 bg-red-600 mx-auto mb-4"></div>
+                <p class="text-gray-600">Oferecemos oportunidades em diferentes frentes no bairro Bela Vista, São José.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-school text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">EEB Bela Vista</h3>
+                    <p class="text-gray-600 mb-4">Foco nos alunos do ensino médio. O esporte utilizado como disciplina curricular para promover cidadania, liderado pelo Professor Lucas Vilela.</p>
+                    <ul class="text-sm text-gray-500 space-y-2 mb-6">
+                        <li><i class="fa-regular fa-clock w-5 text-center"></i> Durante o período letivo</li>
+                        <li><i class="fa-solid fa-user-graduate w-5 text-center"></i> Idade: 13 a 20 anos</li>
+                        <li><i class="fa-solid fa-circle-exclamation w-5 text-center"></i> Requisito: Boas notas</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-building-user text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Centro Comunitário Bela Vista</h3>
+                    <p class="text-gray-600 mb-4">Projeto social com a equipe DS Team, conveniada à Prefeitura. Aulas gratuitas abertas à comunidade, sob o comando do medalhista Kelson Pinto.</p>
+                    <ul class="text-sm text-gray-500 space-y-2 mb-6">
+                        <li><i class="fa-regular fa-calendar-days w-5 text-center"></i> Segunda a Sexta: 17h30 às 18h30</li>
+                        <li><i class="fa-solid fa-child w-5 text-center"></i> Idade: 8 a 18 anos</li>
+                        <li><i class="fa-solid fa-location-dot w-5 text-center"></i> Av. Santa Catarina, nº 630</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato / CTA -->
+    <section id="contato" class="py-20 bg-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-gray-900 rounded-3xl p-10 md:p-16 shadow-2xl overflow-hidden relative">
+            <!-- Decorative circle -->
+            <div class="absolute -top-24 -right-24 w-48 h-48 bg-red-600 rounded-full opacity-50 blur-3xl"></div>
+            <div class="absolute -bottom-24 -left-24 w-48 h-48 bg-blue-600 rounded-full opacity-50 blur-3xl"></div>
+            
+            <div class="relative z-10">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Faça Parte Dessa História</h2>
+                <p class="text-gray-300 mb-8 max-w-2xl mx-auto">Seja você um futuro aluno buscando mudar de vida, ou um parceiro querendo patrocinar e ajudar o projeto a crescer. Entre em contato conosco!</p>
+                
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-8">
+                    <div class="flex items-center gap-3 text-white bg-gray-800 px-6 py-3 rounded-full border border-gray-700">
+                        <i class="fa-brands fa-whatsapp text-green-500 text-xl"></i>
+                        <span class="font-semibold">(48) 99842-7220</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-center gap-4">
+                    <a href="https://instagram.com" target="_blank" class="w-12 h-12 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 flex items-center justify-center text-white hover:scale-110 transition-transform shadow-lg">
+                        <i class="fa-brands fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white hover:scale-110 transition-transform shadow-lg">
+                        <i class="fa-brands fa-facebook-f text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-400 py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2026 Projeto Boxe Bela Vista. Todos os direitos reservados.</p>
+            <p class="text-sm mt-2">Bairro Bela Vista, São José - SC</p>
+        </div>
+    </footer>
+
+    <!-- Script for Mobile Menu -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu on click link
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
