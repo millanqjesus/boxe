@@ -16,7 +16,7 @@ export default function Home() {
       <Contact />
       <footer className="bg-gray-950 text-gray-400 py-8 border-t border-gray-800 text-center">
         <div className="max-w-7xl mx-auto px-4">
-          <p>&copy; {new Date().getFullYear()} Projeto Boxe Bela Vista. Todos os direitos reservados.</p>
+          <p>&copy; 2026 Projeto Boxe Bela Vista. Todos os direitos reservados.</p>
           <p className="text-sm mt-2">Bairro Bela Vista, São José - SC</p>
         </div>
       </footer>
